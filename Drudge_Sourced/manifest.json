@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "Drudge Report Sources",
+  "description": "Add labels and/or icons that show which News sites the Drudge Report links are from",
+  "version": "1.0.10",
+  "options_page": "popup.html",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "y.schwartz@treestonemedia.com"
+    }
+  },
+  "icons": {
+    "16": "info.png",
+    "128": "DS_logo.png"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "browser_action": {
+    "default_icon": "info.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+  {
+    "run_at": "document_end",
+    "matches": ["*://*.drudgereport.com/*"],
+	"js": ["jquery-1.12.4.min.js","main.js"]
+  }
+  ]
+}

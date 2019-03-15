@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head><title>Drudge Report Sources</title></head>
+<body>
+<button style="cursor: pointer;" id="site">Read the<br>DRUDGE REPORT</button>
+<br><br>
+<div class="left">
+    <label>
+        <input type="checkbox" id="site_name"> Show name of linked sites
+    </label><br>
+    <label>
+        <input type="checkbox" id="site_icon"> Show icons of linked sites
+    </label><br>
+    <label>
+        <input type="checkbox" id="new_tab"> Open links in new tab
+    </label><br>
+    <label>
+        <input type="checkbox" id="site_refresh"> Stop 2 minute auto refresh
+    </label>
+</div>
+<br><br>
+<div id="status"></div>
+<button style="cursor: pointer;" id="donate">Buy me a Coffee</button>
+<script src="popup.js"></script>
+<style>
+    body {text-align: center; width: 180px;}
+    .left {text-align: left;}
+    input {
+        width: 15px;
+        height: 15px;
+        position: relative;
+        top: 3px;
+    }
+</style>
+</body>
+</html>
